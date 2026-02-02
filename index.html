@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h2>Todo App</h2>
+
+        <div class="input-group">
+            <input type="text" id="todoInput" placeholder="Add a new todo..."/>
+            <select id="priority">
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+            <button id="addBtn">Add</button>
+        </div>
+        <div class="filters">
+            <button data-filter="all">All</button>
+            <button data-filter="completed">Completed</button>
+            <button data-filter="pending">Pending</button>
+        </div>
+
+        <ul id="todoList"></ul>
+    </div>
+    <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
